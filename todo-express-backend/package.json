@@ -1,5 +1,5 @@
 {
-  "name": "express-app",
+  "name": "todo-express-backend",
   "version": "0.0.0",
   "private": true,
   "scripts": {
