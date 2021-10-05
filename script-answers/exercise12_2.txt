@@ -1,0 +1,25 @@
+Script started on Fri Oct  1 14:13:19 2021
+[1m[7m%[27m[1m[0m                                                                                ]7;file://giovannis-MBP.lan/Users/giovanni/part12-containers-applications/script-answers[0m[27m[24m[Jgiovanni@giovannis-MBP script-answers % [K[?2004h[7mdocker run -it ubuntu bash[27m[26D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27mb[27ma[27ms[27mh[?2004l
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Kf3ef4ff62e0d: Pulling fs layer [1B[1A[2Kf3ef4ff62e0d: Downloading  294.1kB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Downloading  2.063MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Downloading  4.422MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Downloading  6.765MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Downloading  9.997MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Downloading  13.51MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Downloading  16.75MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Downloading  19.71MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Downloading  22.63MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Downloading  26.16MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Download complete [1B[1A[2Kf3ef4ff62e0d: Extracting  294.9kB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  2.654MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  5.014MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  7.373MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  9.437MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting   11.5MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  14.45MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting   17.4MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  20.05MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  22.71MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  24.18MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  26.54MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  28.02MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Extracting  28.57MB/28.57MB[1B[1A[2Kf3ef4ff62e0d: Pull complete [1BDigest: sha256:65de08a8dabf289ef114053ab32f79e0c333a4fbfa1fe3778bb13ae921a7849b
+Status: Downloaded newer image for ubuntu:latest
+]0;root@ba38165a3c37: /root@ba38165a3c37:/# [K]0;root@ba38165a3c37: /root@ba38165a3c37:/# ls
+[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib32[0m  [01;36mlibx32[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;36mlib64[0m  [01;34mmedia[0m   [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+]0;root@ba38165a3c37: /root@ba38165a3c37:/# mkdir /usr/src/app
+]0;root@ba38165a3c37: /root@ba38165a3c37:/# touch /usr/src/app/index.js
+]0;root@ba38165a3c37: /root@ba38165a3c37:/# [Kcd /usr/src/app/
+]0;root@ba38165a3c37: /usr/src/approot@ba38165a3c37:/usr/src/app# ls
+index.js
+]0;root@ba38165a3c37: /usr/src/approot@ba38165a3c37:/usr/src/app# exit
+exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://giovannis-MBP.lan/Users/giovanni/part12-containers-applications/script-answers[0m[27m[24m[Jgiovanni@giovannis-MBP script-answers % [K[?2004heexit[?2004l
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...      79 completed.
+
+Script done on Fri Oct  1 14:15:12 2021

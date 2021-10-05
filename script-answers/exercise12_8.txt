@@ -1,0 +1,58 @@
+Script started on Sat Oct  2 15:01:25 2021
+Restored session: Sat  2 Oct 2021 15:01:10 CEST
+[1m[7m%[27m[1m[0m                                                                                                                                             ]7;file://giovannis-MBP.lan/Users/giovanni/part12-containers-applications/todo-app/todo-backend[0m[27m[24m[Jgiovanni@giovannis-MBP todo-backend % [K[?2004hexitls  docker exec -t todo-backend-mongo-1 mongo -u root -p exampleit todo-backend-mongo-1 mongo -u root -p example[47D[?2004l
+MongoDB shell version v5.0.3
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("4a9ecb77-4da6-46fe-ad10-c09cc702fb5d") }
+MongoDB server version: 5.0.3
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+We recommend you begin using "mongosh".
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs[3G[Jshow dbs[11G
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_database[3G[Juse the_database[19G
+switched to db the_database
+> show collections[3G[Jshow collections[19G
+todos
+> db.todos.find([})[3G[Jdb.todos.find([})[20G
+uncaught exception: SyntaxError: expected expression, got '}' :
+@(shell):1:15
+> [3G[Jdb.todos.find([})[20G[3G[Jdb.todos.find[1;34m([0m[})[19G[3G[Jdb.todos.find([1;34m[[0m})[18G[3G[Jdb.todos.find([[1;34m}[0m)[17G[3G[Jdb.todos.find([1;34m[[0m})[18G[3G[Jdb.todos.find[1;34m([0m})[17G[3G[Jdb.todos.find([1;34m{[0m})[18G[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("615856c912f7f707225885bd"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("615856c912f7f707225885be"), "text" : "Learn about containers", "done" : false }
+> db.todos.insertOne({text: "Increase the number of tools in my toolbelt", status[3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt", statu[81G[3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt", stat[80G[3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt", sta[79G[3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt", st[78G[3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt", s[77G[3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt", [76G[3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt",[75G done: false})[3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt", done: false})[89G
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("6158587ec16172009d89a6f8")
+}
+> [3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt", done: false})[89G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find([})[20G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("615856c912f7f707225885bd"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("615856c912f7f707225885be"), "text" : "Learn about containers", "done" : false }
+{ "_id" : ObjectId("6158587ec16172009d89a6f8"), "text" : "Increase the number of tools in my toolbelt", "done" : false }
+> exit[3G[Jexit[7G
+bye
+[1m[7m%[27m[1m[0m                                                                                                                                             ]7;file://giovannis-MBP.lan/Users/giovanni/part12-containers-applications/todo-app/todo-backend[0m[27m[24m[Jgiovanni@giovannis-MBP todo-backend % [K[?2004heexit[?2004l
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Sat Oct  2 15:03:42 2021
